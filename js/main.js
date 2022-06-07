@@ -1,4 +1,4 @@
-document.querySelector('#getButton').addEventListener('click', apiRequest)
+document.querySelector('#clickButton').addEventListener('click', apiRequest)
 
 async function apiRequest(){
     const nakama = document.querySelector('input').value
