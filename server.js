@@ -141,7 +141,6 @@ app.get('/api/:name', (request, response) => {
     } else{
         response.json(strawHatPirates['unknown'])
     }
-    response.json(strawHatPirates)
 })
 
 app.listen(process.env.PORT || PORT, () => {
