@@ -1,0 +1,256 @@
+:root {
+    font-size: 1.35rem;
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        font-size: 1.2rem;
+    }
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #121212;
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2d2d2d;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #3f3f3f;
+}
+
+@supports (scrollbar-color: #2d2d2d #121212) {
+    * {
+        scrollbar-color: #2d2d2d #121212;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 5px 0;
+    background-color: #000;
+    font-family: 'Antonio', 'Arial Narrow', 'Avenir Next Condensed', sans-serif;
+    line-height: 1.5;
+    color: #c7f;
+}
+
+.lcars-list {
+    list-style: none;
+}
+
+.lcars-list li {
+    position: relative;
+    padding: 0 0 5px 42px;
+    font-size: 1.3rem;
+}
+
+.lcars-list li::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #c8f;
+    position: absolute;
+    top: 13px;
+    left: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .lcars-list {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .lcars-list li::before {
+        top: 10px;
+    }
+}
+
+input {
+    font-size: 2rem;
+    font-family: 'Antonio', 'Arial Narrow', 'Avenir Next Condensed', sans-serif;
+}
+
+.buttons a {
+    display: block;
+    margin: 0 8px 16px 8px;
+    width: 200px;
+    height: 60px;
+    padding: 24px 25px 0 0;
+    background-color: #c8f;
+    border-radius: 26px;
+    text-align: right;
+    line-height: normal;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.buttons a:active,
+.buttons a:focus {
+    filter: brightness(70%);
+    outline: none;
+}
+
+.buttons a.two-rows {
+    font-size: 21px;
+    padding-top: 2px;
+}
+
+.sidebar-buttons a {
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    border-bottom: 5px solid #000;
+    padding: 20px 10px 20px 2px;
+    background-color: #d44;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.sidebar-buttons a:hover {
+    filter: brightness(110%);
+}
+
+.sidebar-buttons a:active,
+.sidebar-buttons a:focus {
+    filter: brightness(80%);
+    outline: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .sidebar-buttons a {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+.buttons {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sunflower,
+.oc-sunflower::before {
+    background-color: #fc6 !important;
+}
+
+.go-sunflower {
+    color: #fc6 !important;
+}
+
+@media only screen and (max-width: 890px) {
+
+    .left-frame-top,
+    .left-frame {
+        width: 130px;
+        min-width: 130px;
+    }
+
+    .left-frame-top {
+        border-radius: 0 0 0 80px;
+    }
+
+    .left-frame {
+        border-radius: 80px 0 0 0;
+    }
+
+    .scroll-top a {
+        width: 130px;
+        padding: 10px 0 0 0;
+        text-align: center;
+    }
+
+    .sutrebor {
+        margin: 4px 4px 19px 69px;
+    }
+
+    .bar-1,
+    .bar-6 {
+        width: 180px;
+    }
+
+    .bar-3,
+    .bar-8 {
+        width: 180px;
+    }
+
+    .content {
+        padding-left: 30px;
+    }
+
+    blockquote {
+        margin-right: 0;
+        margin-left: 25px;
+    }
+
+    .cut-out-top {
+        margin-left: 85px;
+    }
+
+    .cut-out {
+        margin-left: 85px;
+    }
+
+    .cut-out-float {
+        margin-left: 85px;
+    }
+
+    .dc7,
+    .dc8,
+    .dc9,
+    .grid-2 {
+        display: none;
+    }
+
+    .pics-right,
+    .pics-left {
+        float: none;
+        margin: 20px 0 20px 0;
+    }
+
+    .pics-right img,
+    .pics-left img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.pics-right {
+    float: right;
+    margin: 10px 0 20px 20px;
+}
+
+p.caption {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: .88rem;
+}
+
