@@ -8,30 +8,27 @@
 </head>
 <body>
     <h1>Welcome to the One Piece API</h1>
-    <img src="strawhat.png" alt="One Piece Crew">
-	<!-- <img src="https://static.wikia.nocookie.net/onepiece/images/f/f7/Luffy_and_His_Crew.png/revision/latest?cb=20191230172508"> -->
 
     <h2>Enter the name of a Straw Hat Pirate below</h2>
 
     <input type="text">
-			<div class="buttons">
-				<button><a class="sunflower" id="clickButton">Get Info</a></button>
-			</div>
+	<button><a class="sunflower" id="clickButton">Get Info</a></button>
 
-			<div class="pics-right">
-				<img src="" alt='image here' class="border" id="opImage">
-				<p class="caption" id="alienCaption">Photo</p>
-			</div>
+	<div>
+		<img src="" alt='image here' class="border" id="opImage">
+		<p class="caption" id="alienCaption">Photo</p>
+	</div>
 
-			<ul class="lcars-list">
-				<li><span>Name: </span><span id="opName"></span></li>
-				<li><span>Age: </span><span id="opAge"></span></li>
-				<li><span>Occupation: </span><span id="opOccupation"></span></li>
-				<li><span>Crew Position: </span><span id="opPosition"></span></li>
-				<li><span>Crew: </span><span id="opCrew"></span></li>
-                <li><span>Home: </span><span id="opHome"></span></li>
-                <li><span>Bounty: </span><span id="opBounty"></span></li>
-			</ul>
+	<h2>Straw Hat Crew Mate: </h2>
+	<ul>
+		<li><span>Name: </span><span id="opName"></span></li>
+		<li><span>Age: </span><span id="opAge"></span></li>
+		<li><span>Occupation: </span><span id="opOccupation"></span></li>
+		<li><span>Crew Position: </span><span id="opPosition"></span></li>
+		<li><span>Crew: </span><span id="opCrew"></span></li>
+        <li><span>Home: </span><span id="opHome"></span></li>
+        <li><span>Bounty: </span><span id="opBounty"></span></li>
+	</ul>
 	
 	<script src="server.js"></script>
     <script src='js/main.js'></script>
